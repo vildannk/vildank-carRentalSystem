@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Sarajevo car rental</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- font css -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <!-- Additional CSS for the registration form -->
+    <style>
+        #registerModal {
+            color: #000;
+        }
+
+        #registerModal .modal-header {
+            background-color: #ffc107; /* Orange background color for the header */
+        }
+
+        #registerModal .modal-title {
+            color: #000; /* Black text color for the title */
+        }
+
+        #registerModal .form-control {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header section start -->
+    <div class="header_section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html"><img src="images/favicon-32x32.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><b>About</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html"><b>Services</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html"><b>Vehicles</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html"><b>Register</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><b>Login</b></a>
+                        </li>
+                    </ul>
+                    <!-- Add your login and registration modals here -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- header section end -->
+
+    <!-- call_text_main section start -->
+    <div class="call_text_main">
+        <div class="container">
+            <div class="call_taital">
+                <div class="call_text"><a href="https://maps.app.goo.gl/yrQpobufhsGNMY8v7"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_15">Sarajevo</span></a></div>
+                <div class="call_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">(+387) 60 359 7827</span></a></div>
+                <div class="call_text"><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_15">sarajevorent@gmail.com</span></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- call_text_main section end -->
+
+    <!-- Registration form section start -->
+    <div class="container padding_top_0">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <br>
+                <h2 class="section_heading text-center"><b>Register</b></h2>
+                <form action="#" method="post" id="registerForm">
+                    <!-- Registration form fields -->
+                    <div class="form-group">
+                        <label for="registerName">Name</label>
+                        <input type="text" class="form-control" id="registerName" name="registerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerSurname">Surname</label>
+                        <input type="text" class="form-control" id="registerSurname" name="registerSurname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerAge">Age</label>
+                        <input type="number" class="form-control" id="registerAge" name="registerAge" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerGender">Gender</label>
+                        <select class="form-control" id="registerGender" name="registerGender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerLicence">Licence Number</label>
+                        <input type="text" class="form-control" id="registerLicence" name="registerLicence" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" class="form-control" id="registerEmail" name="registerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" class="form-control" id="registerPassword" name="registerPassword"
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirmPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="registerConfirmPassword" name="registerConfirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Registration form section end -->
+
+    <!-- Add the registration modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <!-- Add your registration form here -->
+    </div>
+
+</body>

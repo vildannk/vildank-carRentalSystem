@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Sarajevo car rental</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- font css -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+<body>
+
+<!-- header section start -->
+<div class="header_section">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="images/favicon-32x32.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html"><b>Services</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html"><b>Vehicles</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html"><b>Register</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><b>Login</b></a>
+                    </li>
+                </ul>
+                <!-- Add your login and registration modals here -->
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- header section end -->
+
+<!-- ... (unchanged) ... -->
+
+<!-- Add the login modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <!-- Add your login form here -->
+</div>
+
+<!-- Add the registration modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <!-- Add your registration form here -->
+</div>
+</html>
+      <!-- header section end -->
+      <div class="call_text_main">
+        <div class="container">
+            <div class="call_taital">
+                <div class="call_text"><a href="https://maps.app.goo.gl/yrQpobufhsGNMY8v7"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_15">Sarajevo</span></a></div>
+                <div class="call_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">(+387) 60 359 7827</span></a></div>
+                <div class="call_text"><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_15">sarajevorent@gmail.com</span></a></div>
+            </div>
+        </div>
+    </div>
+    
+    <div></div>
+    
+    <div class="container padding_top_0">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <br>
+                <h2 class="section_heading text-center"><b>Book Your Car</b></h2>
+                <form action="#" method="post" id="bookingForm">
+                    <!-- Add your booking form fields here -->
+                    <div class="form-group">
+                        <label for="pickupLocation">Pickup Location</label>
+                        <input type="text" class="form-control" id="pickupLocation" name="pickupLocation" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dropoffLocation">Drop-off Location</label>
+                        <input type="text" class="form-control" id="dropoffLocation" name="dropoffLocation" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickupDate">Pickup Date</label>
+                        <input type="date" class="form-control" id="pickupDate" name="pickupDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dropoffDate">Drop-off Date</label>
+                        <input type="date" class="form-control" id="dropoffDate" name="dropoffDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="carType">Car Type</label>
+                        <select class="form-control" id="carType" name="carType" required>
+                            <option value="compact">Ferrari 458 Italia</option>
+                            <option value="sedan">BMW X4M 2021</option>
+                            <option value="compact">Mercedes Benz GLE coupe</option>
+                            <option value="sedan">BMW M5 2022</option>
+                            <option value="compact">Opel Corsa</option>
+                            <option value="compact">Toyota Corolla 2023</option>
+                            <option value="compact">Golf 8 diesel 2022</option>
+                            <option value="compact">Peugeot 2008</option>
+                            <option value="sedan">Lamborghini Urus</option>
+                            <!-- Add more options based on your available car types -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="additionalRequests">Additional Requests</label>
+                        <textarea class="form-control" id="additionalRequests" name="additionalRequests" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-orange btn-block">Submit Booking</button>
+                </form>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
