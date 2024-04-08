@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sarajevo car rental</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <style>
+        #registerModal {
+            color: #000;
+        }
+        #registerModal .modal-header {
+            background-color: #ffc107;
+        }
+        #registerModal .modal-title {
+            color: #000;
+        }
+        #registerModal .form-control {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SPApp container -->
+    <div id="app"></div>
+
+    <!-- SPApp script -->
+    <script src="spapp.js"></script>
+
+    <!-- SPApp pages -->
+    <script type="text/spapp-template" id="home-page">
+        <!-- Include home page content here -->
+    </script>
+
+    <script type="text/spapp-template" id="about-page">
+        <!-- Include about page content here -->
+    </script>
+
+    <script type="text/spapp-template" id="services-page">
+        <!-- Include services page content here -->
+    </script>
+
+    <script type="text/spapp-template" id="gallery-page">
+        <!-- Include gallery page content here -->
+    </script>
+
+    <script type="text/spapp-template" id="register-page">
+        <!-- Include register page content here -->
+    </script>
+
+    <script type="text/spapp-template" id="login-page">
+        <!-- Include login page content here -->
+    </script>
+
+    <!-- SPApp router -->
+    <script>
+        SPApp.init({
+            container: '#app',
+            routes: {
+                '/': 'home-page',
+                '/about': 'about-page',
+                '/services': 'services-page',
+                '/gallery': 'gallery-page',
+                '/register': 'register-page',
+                '/login': 'login-page'
+            }
+        });
+    </script>
+
+    <!-- Additional CCSS for the registration form -->
+    <style>
+        #registerModal {
+            color: #000;
+        }
+        #registerModal .modal-header {
+            background-color: #ffc107;
+        }
+        #registerModal .modal-title {
+            color: #000;
+        }
+        #registerModal .form-control {
+            margin-bottom: 15px;
+        }
+    </style>
+
+</body>
+</html>
